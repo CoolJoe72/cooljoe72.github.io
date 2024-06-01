@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Domain</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Sixtyfour:SCAN@-30..-10&display=swap');
+</style>
+<style type=text/css>
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	height:100vh;
+	padding: 0;
+	margin: 0;
+	display:grid;
+	place-items: center;
+	font-family: "Special Elite",Consolas,Menlo,Courier,monospace;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+main {
+	text-align:center;
+	margin:10%;
+}
+h1 {font-size:3vmax;}
+h2 {font-size:2vmax;}
+p {font-size:1.5vmax;}
+h1 em {text-transform:uppercase;font-size:larger;color:firebrick;font-family:Sixtyfour;font-variation-settings:'SCAN' -10;}
+@media (prefers-color-scheme: dark) {
+	h1 em {color:#ffb700;font-variation-settings:'SCAN' -30;}
+	body { background-color:#000; color:#4aff00; }
+}
+</style>
+</head>
+<body>
+	<main>
+		<h1>Thank you for visiting <em><!--#echo var="HTTP_HOST"--></em></h1>
+		<h2>In this environment err0rs run amok and failure is bound to happen!</h2>
+		<h2>If you are seeing this page you have not setup your test site <del>corectly</del> <ins>correctly</ins> or pages&nbsp;are&nbsp;<span title="missing">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>!</h2>
+		<p>Contact the administrator or support for assistance.</p>
+		<p style="font-size: 1vmax">Hopefully that's not you!</p>
+	</main>
+</body>
+</html>
